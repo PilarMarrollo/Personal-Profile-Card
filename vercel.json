@@ -3,15 +3,14 @@
   "name": "personal-profile-card",
   "builds": [
     {
-      "src": "index.html",
+      "src": "*.html",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/index.html",
-      "continue": true
+      "dest": "/index.html"
     }
   ],
   "headers": [
@@ -33,4 +32,4 @@
       ]
     }
   ]
-}
+} 
